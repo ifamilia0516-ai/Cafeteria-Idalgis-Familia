@@ -6,12 +6,11 @@
 * **Matrícula:** [2024-1270]
 * **Asignatura:** Programación Básica (Windows Forms - C#)
 
----
 
 ### 2. Descripción del Programa
 Aplicación de escritorio desarrollada en **C# (Windows Forms)** que permite gestionar y facturar pedidos de la cafetería *"El Buen Sabor"*. El sistema calcula el precio unitario según el tamaño y extras seleccionados, acumula múltiples líneas de pedido en un listado con columnas alineadas y determina el subtotal, descuento por cliente frecuente, cargo de empaque para llevar, ITBIS (18 %) y el total final a pagar.
 
----
+
 
 ### 3. Datos de Entrada
 * **Cliente:** Nombre del cliente (`txtCliente`) y condición de cliente frecuente (`chkFrecuente`).
@@ -20,7 +19,7 @@ Aplicación de escritorio desarrollada en **C# (Windows Forms)** que permite ges
 * **Opciones del producto:** Tamaño Normal o Grande (`rbtNormal`, `rbtGrande`) y porción extra (`chkPorcionExtra`).
 * **Tipo de servicio:** Consumir en local o Para llevar (`rbtLocal`, `rbtLlevar`).
 
----
+
 
 ### 4. Proceso (Reglas de Negocio)
 1. **Precio unitario:** `precio digitado + RD$25` (si es tamaño Grande) `+ RD$30` (si lleva porción extra).
@@ -30,15 +29,12 @@ Aplicación de escritorio desarrollada en **C# (Windows Forms)** que permite ges
 5. **Base imponible:** `subtotal - descuento + empaque`.
 6. **ITBIS y Total:** `ITBIS = 18 %` de la base imponible; `Total a pagar = base imponible + ITBIS`.
 
----
+
 
 ### 5. Datos de Salida
 * Detalle alineado por columnas (`Cant`, `Producto`, `Precio`, `Total`) en `lstPedido`.
 * Resumen financiero en etiquetas con formato moneda (`RD$ 0.00`): **Subtotal**, **Descuento**, **Empaque**, **ITBIS (18 %)** y **Total a pagar**.
 
----
 
-### 6. Capturas de Pantalla del Programa en Ejecución
-*(Inserta aquí las capturas de pantalla de tu aplicación ejecutando el caso de prueba)*
 
 
